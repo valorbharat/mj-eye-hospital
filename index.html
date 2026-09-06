@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M. &amp; J. Institute of Ophthalmology — Ahmedabad</title>
+<meta name="description" content="M. & J. Institute of Ophthalmology, Ahmedabad — Western Regional Institute of Ophthalmology, Civil Hospital Campus, Asarwa. Est. 1952.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0E3A53;
+    --navy-deep:#082A3D;
+    --teal:#1B6E7A;
+    --gold:#C99A3C;
+    --paper:#F6F5F0;
+    --panel:#ECEAE1;
+    --ink:#1B2430;
+    --ink-soft:#4C5A63;
+    --line:#D9D5C7;
+    --white:#FFFFFF;
+    --radius:2px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', Arial, sans-serif;
+    font-size:16px;
+    line-height:1.6;
+  }
+  h1,h2,h3,h4{
+    font-family:'Fraunces', Georgia, serif;
+    color:var(--navy-deep);
+    margin:0 0 0.5em 0;
+    line-height:1.15;
+    font-weight:600;
+  }
+  a{color:var(--teal);}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+  .measure{max-width:62ch;}
+
+  /* top government strip */
+  .gov-strip{
+    background:var(--navy-deep);
+    color:#CFE1E8;
+    font-size:0.82rem;
+  }
+  .gov-strip .wrap{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:7px 24px;flex-wrap:wrap;gap:6px;
+  }
+  .gov-strip a{color:#CFE1E8;text-decoration:none;border-bottom:1px solid rgba(207,225,232,0.4);}
+
+  /* header */
+  header.site{
+    background:var(--white);
+    border-bottom:3px solid var(--gold);
+  }
+  .site-head{
+    display:flex;align-items:center;gap:18px;
+    padding:20px 24px 16px;
+  }
+  .mark{flex:none;}
+  .site-titles h1{font-size:1.5rem;margin:0;}
+  .site-titles p{margin:2px 0 0;color:var(--ink-soft);font-size:0.95rem;}
+
+  nav.primary{
+    background:var(--navy);
+  }
+  nav.primary ul{
+    list-style:none;margin:0;padding:0 24px;
+    display:flex;gap:2px;flex-wrap:wrap;max-width:1120px;margin:0 auto;
+  }
+  nav.primary a{
+    display:block;color:#E9EEF0;text-decoration:none;
+    padding:13px 16px;font-size:0.93rem;font-weight:500;
+    border-bottom:3px solid transparent;
+  }
+  nav.primary a:hover{border-bottom-color:var(--gold);background:rgba(255,255,255,0.04);}
+
+  /* hero */
+  .hero{
+    background:linear-gradient(180deg, #0E3A53 0%, #0B2F45 100%);
+    color:var(--white);
+    padding:56px 0 48px;
+  }
+  .hero .wrap{display:flex;gap:48px;align-items:center;flex-wrap:wrap;}
+  .hero-copy{flex:1 1 420px;}
+  .hero h2{
+    color:var(--white);
+    font-size:2.3rem;
+    max-width:14ch;
+  }
+  .hero p.lede{
+    color:#D9E4E8;font-size:1.08rem;max-width:52ch;margin:14px 0 26px;
+  }
+  .hero-facts{
+    display:flex;gap:28px;flex-wrap:wrap;margin-top:6px;
+  }
+  .hero-facts div{border-left:2px solid var(--gold);padding-left:12px;}
+  .hero-facts strong{display:block;font-family:'Fraunces',serif;font-size:1.25rem;color:var(--white);}
+  .hero-facts span{color:#BFD0D6;font-size:0.85rem;}
+  .cta-row{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;padding:11px 20px;text-decoration:none;
+    font-weight:600;font-size:0.94rem;border-radius:var(--radius);
+    border:1px solid transparent;
+  }
+  .btn-gold{background:var(--gold);color:var(--navy-deep);}
+  .btn-gold:hover{background:#DCAE52;}
+  .btn-outline{border-color:#BFD0D6;color:var(--white);}
+  .btn-outline:hover{background:rgba(255,255,255,0.08);}
+
+  .hero-eye{flex:0 0 260px;}
+
+  /* sections */
+  section{padding:56px 0;}
+  section.alt{background:var(--panel);}
+  .section-head{margin-bottom:32px;max-width:60ch;}
+  .section-head p{color:var(--ink-soft);}
+
+  /* timeline */
+  .timeline{border-left:2px solid var(--line);margin-left:6px;}
+  .timeline li{
+    list-style:none;position:relative;padding:0 0 30px 28px;
+  }
+  .timeline li:last-child{padding-bottom:0;}
+  .timeline li::before{
+    content:"";position:absolute;left:-7px;top:3px;
+    width:12px;height:12px;border-radius:50%;
+    background:var(--gold);border:2px solid var(--paper);
+  }
+  .timeline .yr{
+    font-family:'Fraunces',serif;color:var(--navy);font-size:1.1rem;font-weight:600;
+  }
+  .timeline p{margin:4px 0 0;color:var(--ink-soft);max-width:55ch;}
+
+  /* departments */
+  .dept-list{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:1px;background:var(--line);border:1px solid var(--line);
+  }
+  .dept-list article{
+    background:var(--white);padding:24px;
+  }
+  .dept-list h3{font-size:1.08rem;margin-bottom:8px;}
+  .dept-list p{color:var(--ink-soft);font-size:0.94rem;margin:0;}
+
+  /* leadership */
+  .lead-grid{display:flex;gap:40px;flex-wrap:wrap;align-items:flex-start;}
+  .lead-photo{
+    flex:0 0 180px;height:220px;background:var(--panel);
+    border:1px solid var(--line);display:flex;align-items:center;justify-content:center;
+    color:var(--ink-soft);font-size:0.82rem;text-align:center;padding:12px;
+  }
+  .lead-copy{flex:1 1 400px;}
+  .lead-copy .role{color:var(--teal);font-weight:600;margin-bottom:4px;font-size:0.95rem;}
+
+  /* services table */
+  table.services{width:100%;border-collapse:collapse;background:var(--white);}
+  table.services th,table.services td{
+    text-align:left;padding:14px 16px;border-bottom:1px solid var(--line);font-size:0.95rem;
+  }
+  table.services th{color:var(--ink-soft);font-weight:500;width:34%;}
+  .note-box{
+    margin-top:20px;padding:16px 18px;background:#FBF6E9;border:1px solid var(--gold);
+    font-size:0.92rem;color:var(--ink-soft);
+  }
+
+  /* notices */
+  .notice-list{list-style:none;margin:0;padding:0;background:var(--white);border:1px solid var(--line);}
+  .notice-list li{
+    display:flex;gap:18px;padding:16px 20px;border-bottom:1px solid var(--line);align-items:baseline;flex-wrap:wrap;
+  }
+  .notice-list li:last-child{border-bottom:none;}
+  .notice-date{flex:0 0 100px;color:var(--teal);font-weight:600;font-size:0.88rem;}
+  .notice-title{flex:1 1 260px;}
+  .notice-title a{color:var(--ink);text-decoration:none;}
+  .notice-title a:hover{color:var(--teal);}
+
+  /* gallery */
+  .gallery{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;
+  }
+  .gallery figure{
+    margin:0;background:var(--panel);border:1px dashed var(--line);
+    aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;
+    color:var(--ink-soft);font-size:0.82rem;text-align:center;padding:10px;
+  }
+
+  /* contact */
+  .contact-grid{display:flex;gap:44px;flex-wrap:wrap;}
+  .contact-info{flex:1 1 300px;}
+  .contact-info dt{color:var(--ink-soft);font-size:0.85rem;margin-top:16px;}
+  .contact-info dt:first-child{margin-top:0;}
+  .contact-info dd{margin:2px 0 0;font-weight:500;}
+  .map-embed{flex:1 1 380px;min-height:280px;border:1px solid var(--line);background:var(--white);}
+  .map-embed iframe{width:100%;height:100%;min-height:280px;border:0;display:block;}
+
+  footer.site{
+    background:var(--navy-deep);color:#B9C9D0;padding:36px 0 24px;font-size:0.88rem;
+  }
+  footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+  footer.site a{color:#DCE7EA;}
+  footer.site .fine{margin-top:18px;color:#7C8E96;font-size:0.8rem;}
+
+  @media (max-width:760px){
+    .site-head{flex-direction:column;align-items:flex-start;}
+    .hero h2{font-size:1.8rem;}
+    nav.primary ul{padding:0 12px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="gov-strip">
+  <div class="wrap">
+    <span>Government of Gujarat · Health &amp; Family Welfare Department</span>
+    <a href="#contact">Civil Hospital Campus, Asarwa, Ahmedabad – 380016</a>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap site-head">
+    <div class="mark">
+      <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="26" cy="26" r="25" stroke="#0E3A53" stroke-width="1.5"/>
+        <path d="M4 26C10 15 18 10 26 10C34 10 42 15 48 26C42 37 34 42 26 42C18 42 10 37 4 26Z" stroke="#1B6E7A" stroke-width="1.6"/>
+        <circle cx="26" cy="26" r="7.5" fill="#C99A3C"/>
+        <circle cx="26" cy="26" r="3" fill="#0E3A53"/>
+      </svg>
+    </div>
+    <div class="site-titles">
+      <h1>M. &amp; J. Institute of Ophthalmology</h1>
+      <p>Western Regional Institute of Ophthalmology · Affiliated to B. J. Medical College &amp; Gujarat University</p>
+    </div>
+  </div>
+  <nav class="primary">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#departments">Departments</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#services">Patient Services</a></li>
+      <li><a href="#notices">Notice Board</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <h2>Tertiary eye care for Gujarat, since 1952.</h2>
+      <p class="lede">A semi-autonomous institute within the Civil Hospital Medicity campus, providing primary, secondary and tertiary ophthalmic care alongside postgraduate training and research.</p>
+      <div class="hero-facts">
+        <div><strong>1952</strong><span>Founded as an ophthalmic ward</span></div>
+        <div><strong>1968</strong><span>Named Western Regional Institute</span></div>
+        <div><strong>30</strong><span>M.S. Ophthalmology seats / year</span></div>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="#services">Patient services &amp; OPD</a>
+        <a class="btn btn-outline" href="#contact">Find us</a>
+      </div>
+    </div>
+    <div class="hero-eye">
+      <svg viewBox="0 0 260 260" width="100%" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="130" cy="130" r="128" fill="none" stroke="#1B6E7A" stroke-width="1"/>
+        <circle cx="130" cy="130" r="100" fill="none" stroke="#C99A3C" stroke-width="1"/>
+        <path d="M20 130C55 75 95 50 130 50C165 50 205 75 240 130C205 185 165 210 130 210C95 210 55 185 20 130Z" fill="none" stroke="#DCE7EA" stroke-width="1.4"/>
+        <circle cx="130" cy="130" r="34" fill="#C99A3C" opacity="0.9"/>
+        <circle cx="130" cy="130" r="14" fill="#082A3D"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>About the institute</h2>
+      <p>From a single ophthalmic ward to a regional centre for eye care and training.</p>
+    </div>
+    <ul class="timeline">
+      <li>
+        <div class="yr">1952</div>
+        <p>Begins as a small ophthalmic ward within Civil Hospital, Ahmedabad, treating patients from across the city and surrounding districts.</p>
+      </li>
+      <li>
+        <div class="yr">1968</div>
+        <p>Designated the Western Regional Institute of Ophthalmology, extending its reach across Gujarat and neighbouring states.</p>
+      </li>
+      <li>
+        <div class="yr">1984</div>
+        <p>Becomes a semi-autonomous institute, affiliated to B. J. Medical College and Gujarat University, while remaining part of the Civil Hospital Medicity campus.</p>
+      </li>
+      <li>
+        <div class="yr">Today</div>
+        <p>Runs dedicated units in cornea, retina, glaucoma and paediatric ophthalmology, trains postgraduate ophthalmologists, and holds outreach eye camps for rural and underserved communities.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt" id="departments">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Departments &amp; specialty units</h2>
+      <p>Care is organised into focused clinical units, each staffed by faculty and postgraduate trainees.</p>
+    </div>
+    <div class="dept-list">
+      <article>
+        <h3>Cornea &amp; Eye Bank</h3>
+        <p>Corneal disease management, transplant surgery, and the institute's eye bank for donated corneal tissue.</p>
+      </article>
+      <article>
+        <h3>Retina Services</h3>
+        <p>Diagnosis and treatment of retinal disorders, including diabetic retinopathy and retinal detachment.</p>
+      </article>
+      <article>
+        <h3>Glaucoma Clinic</h3>
+        <p>Screening, medical management and surgical care for glaucoma, with long-term monitoring.</p>
+      </article>
+      <article>
+        <h3>Paediatric Ophthalmology &amp; Squint</h3>
+        <p>Eye care for children, including squint (strabismus) correction and vision screening.</p>
+      </article>
+      <article>
+        <h3>Oculoplasty &amp; Low Vision Aid</h3>
+        <p>Reconstructive and eyelid surgery, alongside aids and rehabilitation for patients with low vision.</p>
+      </article>
+      <article>
+        <h3>General OPD &amp; Emergency Eye Care</h3>
+        <p>Walk-in outpatient consultations and emergency management of eye injuries and acute conditions.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="leadership">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Leadership</h2>
+    </div>
+    <div class="lead-grid">
+      <div class="lead-photo">Director's photograph<br>(add to /Webfoto)</div>
+      <div class="lead-copy">
+        <div class="role">Director</div>
+        <h3>Dr. Swati Devanhalli</h3>
+        <p class="measure">The institute is directed by Dr. Swati Devanhalli, overseeing clinical services, the M.S. Ophthalmology postgraduate programme, and the institute's role as an examination centre for the International Council of Ophthalmology (ICO).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Patient services</h2>
+      <p>Outpatient, emergency and scheme-based care for patients across Gujarat.</p>
+    </div>
+    <table class="services">
+      <tr><th>OPD registration</th><td>Monday – Saturday, timings to be confirmed with the hospital administration</td></tr>
+      <tr><th>Emergency eye care</th><td>Available for acute eye injuries and emergencies</td></tr>
+      <tr><th>Government schemes</th><td>Treatment accepted under Ayushman Bharat / PM-JAY</td></tr>
+      <tr><th>Charges</th><td>Consultation and treatment are provided free of charge; select investigations are charged at minimum government rates</td></tr>
+      <tr><th>Postgraduate programme</th><td>M.S. Ophthalmology, 30 seats annually, affiliated to Gujarat University</td></tr>
+    </table>
+    <div class="note-box">Timings, fee schedules and scheme details shown here are placeholders — replace with the institute's current, verified information before publishing.</div>
+  </div>
+</section>
+
+<section id="notices">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Notice board</h2>
+      <p>Circulars, tenders and public notices from the institute.</p>
+    </div>
+    <ul class="notice-list">
+      <li><span class="notice-date">Add date</span><span class="notice-title"><a href="#">Sample notice — replace with an actual circular or tender</a></span></li>
+      <li><span class="notice-date">Add date</span><span class="notice-title"><a href="#">Sample notice — eye camp / outreach schedule</a></span></li>
+      <li><span class="notice-date">Add date</span><span class="notice-title"><a href="#">Sample notice — recruitment or admission notification</a></span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt" id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Photo gallery</h2>
+      <p>Add photographs to the <code>/Webfoto</code> folder and reference them here.</p>
+    </div>
+    <div class="gallery">
+      <figure>Building / campus photo</figure>
+      <figure>OPD / waiting area</figure>
+      <figure>Operation theatre</figure>
+      <figure>Outreach eye camp</figure>
+      <figure>Faculty &amp; staff</figure>
+      <figure>Equipment / diagnostics</figure>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Contact &amp; location</h2>
+    </div>
+    <div class="contact-grid">
+      <dl class="contact-info">
+        <dt>Address</dt>
+        <dd>M. &amp; J. Institute of Ophthalmology<br>Civil Hospital Campus, Asarwa<br>Ahmedabad – 380016, Gujarat</dd>
+        <dt>Phone</dt>
+        <dd>Add institute phone number</dd>
+        <dt>Email</dt>
+        <dd>Add institute email address</dd>
+        <dt>Affiliated with</dt>
+        <dd>B. J. Medical College &amp; Civil Hospital, Ahmedabad</dd>
+      </dl>
+      <div class="map-embed">
+        <iframe src="https://www.google.com/maps?q=Civil+Hospital+Asarwa+Ahmedabad&output=embed" loading="lazy" title="Map to Civil Hospital Campus, Asarwa, Ahmedabad"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <strong>M. &amp; J. Institute of Ophthalmology</strong><br>
+      Civil Hospital Campus, Asarwa, Ahmedabad
+    </div>
+    <div>
+      <a href="https://civilhospitalahd.gujarat.gov.in/" target="_blank" rel="noopener">Civil Hospital, Ahmedabad</a><br>
+      <a href="https://bjmcabd.edu.in/" target="_blank" rel="noopener">B. J. Medical College</a>
+    </div>
+  </div>
+  <div class="wrap fine">This is an unofficial, editable project template modelled on the Civil Hospital Ahmedabad website format — verify all facts, timings and contact details with the institute before publishing.</div>
+</footer>
+
+</body>
+</html>
